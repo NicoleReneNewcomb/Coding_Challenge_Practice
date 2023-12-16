@@ -3,9 +3,18 @@ def main():
     myCar1 = ["Ford", "F150", 2019]
     myCar5 = ["BMW", "M3", 2020, "Blue", "Good", 58674]
     
-    myCar5Dict = dict(zip(attributes,myCar5))
-    car5Obj = car(**myCar5Dict)
-    print(car5Obj, car5Obj.condition, car5Obj.mileage)
+    my_num = -5 % 4
+    print(my_num)
+
+    myDict = dict(zip(attributes, myCar5))
+    print(type(myDict))
+
+    for val in attributes:
+        print(attributes.index(val))
+
+    # myCar5Dict = dict(zip(attributes,myCar5))
+    # car5Obj = car(**myCar5Dict)
+    # print(car5Obj, car5Obj.condition, car5Obj.mileage)
 
     # input = "Four score and seven years ago"
     # print(input.slice(-3))
