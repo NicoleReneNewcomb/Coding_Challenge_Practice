@@ -2,15 +2,48 @@ def main():
     attributes = ['make', 'model', 'year','color','condition', 'mileage']
     myCar1 = ["Ford", "F150", 2019]
     myCar5 = ["BMW", "M3", 2020, "Blue", "Good", 58674]
-    
-    my_num = -5 % 4
-    print(my_num)
 
-    myDict = dict(zip(attributes, myCar5))
-    print(type(myDict))
+    # myInt = 3
+    # myFloat = 3.455
+    # print(45.45.hex())
 
-    for val in attributes:
-        print(attributes.index(val))
+    # myDict = {1: ["Rain"], 2: "Clouds", 3: "Sun"}
+    # myDict[1].append("fog")
+    # del myDict[2]
+    # print(myDict)
+
+    myList = [4, 5, 6, 7, 8]
+    myList2 = [6, 7, 8, 12,13,14,15]
+    print(myList + myList2)
+    print(myList)
+    myList.extend(myList2)
+    print(myList)
+    myList3 = sorted(myList2, reverse=True)
+    print(myList3)
+    myCar6 = sorted(attributes, key=len)
+    print(myCar6)
+  
+  
+    # print(myList)
+    # del myList[3]
+    # print(myList[::-1])
+    # myList.extend([1, 3, 4])
+    # print(myList)
+
+    # print("Hello"[::-1])
+
+    # genre = "transcendental"
+    # print(genre[:-8])
+    # print(genre[-7:9])
+
+    # my_num = -5 % 4
+    # print(my_num)
+
+    # myDict = dict(zip(attributes, myCar5))
+    # print(myDict)
+
+    # for val in enumerate(attributes):
+    #     print(val)
 
     # myCar5Dict = dict(zip(attributes,myCar5))
     # car5Obj = car(**myCar5Dict)
