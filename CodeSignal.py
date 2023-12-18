@@ -12,18 +12,38 @@ def main():
     # del myDict[2]
     # print(myDict)
 
-    myList = [4, 5, 6, 7, 8]
-    myList2 = [6, 7, 8, 12,13,14,15]
-    print(myList + myList2)
+    myDict = {"majid":"hot", "nicole":"not"}
+    myDict.update({"bob":"cold", 'nicole':'super hot'})
+    myDict['carly'] = "sad"
+    myDict.clear()
+    print(myDict)
+
+    # print(myList)
+    # myList[:3] = [1,2,3]
+    # print(myList)
+
+    # x = 1, 2, 3
+    # print(x)
+
+    # myList3 = [x * 3 for x in range(6)]
+    # myList4 = myList3
+    # myList3.pop()
+    # myList3.pop()
+    # print(myList3)
+    # print(myList4)
+
+    # my1 = True
+    # my2 = my1
+    # print(id(my1))
+    # print(id(my2))
+
+def changeList(myList):
+    myList.insert(0, 22)
+    myList.insert(0, 98)
     print(myList)
-    myList.extend(myList2)
-    print(myList)
-    myList3 = sorted(myList2, reverse=True)
-    print(myList3)
-    myCar6 = sorted(attributes, key=len)
-    print(myCar6)
-  
-  
+    return
+
+
     # print(myList)
     # del myList[3]
     # print(myList[::-1])
