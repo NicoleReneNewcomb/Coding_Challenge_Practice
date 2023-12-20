@@ -1,7 +1,39 @@
 def main():
-    attributes = ['make', 'model', 'year','color','condition', 'mileage']
-    myCar1 = ["Ford", "F150", 2019]
-    myCar5 = ["BMW", "M3", 2020, "Blue", "Good", 58674]
+    # attributes = ['make', 'model', 'year','color','condition', 'mileage']
+    # myCar1 = ["Ford", "F150", 2019]
+    # myCar5 = ["BMW", "M3", 2020, "Blue", "Good", 58674]
+
+    elements =  {"hydrogen": {"number": 1,
+                            "weight": [ 1.00794, 2.34],
+                            "symbol": 'H'},
+                "helium": {"number": 2,
+                            "weight": 4.002602,
+                            "symbol": "He"}, 
+                "oxygen": {"number": 8, 
+                            "weight": 15.999, 
+                            "symbol": "O"}}
+    
+    a = "hydrogen"
+    b = "weight"
+    elements["hydrogen"]["weight"].append(45)
+    print(elements["hydrogen"]["weight"])
+
+    # x = 100
+    # y = tuple(range(1, 50, 10))
+    # print(y)
+    # if 60 <= x < 110:
+    #     pass
+
+#     x = [1, 4, 5]
+#     y = True
+#     change(x)
+#     print(x)
+
+
+# def change(x : int):
+#     x.append(98)
+#     print(x)
+#     return x
 
     # myInt = 3
     # myFloat = 3.455
@@ -12,11 +44,11 @@ def main():
     # del myDict[2]
     # print(myDict)
 
-    myDict = {"majid":"hot", "nicole":"not"}
-    myDict.update({"bob":"cold", 'nicole':'super hot'})
-    myDict['carly'] = "sad"
-    myDict.clear()
-    print(myDict)
+    # myDict = {"majid":"hot", "nicole":"not"}
+    # myDict.update({"bob":"cold", 'nicole':'super hot'})
+    # myDict['carly'] = "sad"
+    # myDict.
+    # print(myDict)
 
     # print(myList)
     # myList[:3] = [1,2,3]
