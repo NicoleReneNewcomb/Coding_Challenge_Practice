@@ -1,22 +1,32 @@
 def main():
+
+    nums = [-2,1,-3,4,-1,2,1,-5,4]
+    for i in range(1, len(nums)):
+        nums[i]=max(nums[i],nums[i-1]+nums[i])
+        print(nums)
+    print(max(nums))
+   
+   
+   
+   
     # attributes = ['make', 'model', 'year','color','condition', 'mileage']
     # myCar1 = ["Ford", "F150", 2019]
     # myCar5 = ["BMW", "M3", 2020, "Blue", "Good", 58674]
 
-    elements =  {"hydrogen": {"number": 1,
-                            "weight": [ 1.00794, 2.34],
-                            "symbol": 'H'},
-                "helium": {"number": 2,
-                            "weight": 4.002602,
-                            "symbol": "He"}, 
-                "oxygen": {"number": 8, 
-                            "weight": 15.999, 
-                            "symbol": "O"}}
+    # elements =  {"hydrogen": {"number": 1,
+    #                         "weight": [ 1.00794, 2.34],
+    #                         "symbol": 'H'},
+    #             "helium": {"number": 2,
+    #                         "weight": 4.002602,
+    #                         "symbol": "He"}, 
+    #             "oxygen": {"number": 8, 
+    #                         "weight": 15.999, 
+    #                         "symbol": "O"}}
     
-    a = "hydrogen"
-    b = "weight"
-    elements["hydrogen"]["weight"].append(45)
-    print(elements["hydrogen"]["weight"])
+    # a = "hydrogen"
+    # b = "weight"
+    # elements["hydrogen"]["weight"].append(45)
+    # print(elements["hydrogen"]["weight"])
 
     # x = 100
     # y = tuple(range(1, 50, 10))
